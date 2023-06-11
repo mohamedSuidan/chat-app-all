@@ -19,7 +19,7 @@ exports.createChatInfo = async (req, res, next) => {
       const userRecive = await userModel.findById(req.body.user_id_2);
 
       res.json({
-        chat_id: chat_id._id,
+        chat_id: chat_id,
         reciver: userRecive,
       });
     } else {
